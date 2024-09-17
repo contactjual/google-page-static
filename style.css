@@ -1,0 +1,256 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(52, 52, 52);
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-weight: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-weight: 0;
+}
+
+header nav ul li:nth-child(1) a:hover,
+header nav ul li:nth-child(2) a:hover {
+    text-decoration: underline;
+}
+
+/* header nav ul li:nth-child(3) a:hover {
+    background: rgba(255, 255, 255, 0.067);
+    padding: 7px;
+    border-radius: 10px;
+} */
+
+header nav ul .button a {
+    background-color: #99c9f9ed;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+
+
+
+main {
+    padding-top: 50px;
+}
+main .center-items {
+    text-align: center;
+}
+
+main .center-items h1 {
+    font-size: 90px;
+    font-weight: 600;
+    background: linear-gradient(360deg, red, rgb(255, 150, 3), rgb(245, 206, 35), rgb(255, 128, 1), rgb(113, 6, 254));
+    color: transparent;
+    background-clip: text;
+}
+
+main .center-items input {
+    width: 100%;
+    height: 46px;
+    margin: 20px 0 30px 0;
+    padding: 10px 100px 10px 50px;
+    font-size: 18px;
+    border-radius: 50px;
+    border: 1px solid gray;
+    background-color: rgb(52, 52, 52);
+}
+
+main .center-items input:hover,
+main .center-items input:focus {
+    border: none;
+    background-color: rgba(37, 37, 37, 0.78);
+    outline: none;
+}
+
+main .center-items .input-area {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+main .center-items .icons .fa-magnifying-glass {
+    position: absolute;
+    bottom: 46px;
+    left: 20px;
+}
+
+main .center-items .icons .mic-cam {
+    position: absolute;
+    bottom: 44px;
+    right: 20px;
+}
+
+main .center-items .icons .mic-cam i {
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+main .center-items .buttons a {
+    background-color: rgba(255, 255, 255, 0.227);
+    padding: 10px;
+}
+
+main .center-items .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+main .center-items .buttons a:hover {
+    /* border: 1px solid white; */
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+
+
+main .lang {
+    font-size: 15px;
+}
+
+main .lang a {
+    color: rgba(55, 179, 251, 0.979);
+}
+
+main .lang a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .bgc {
+    background-color: rgba(37, 37, 37, 0.78);
+    padding: 10px 0 8px 0;
+}
+
+footer hr {
+    margin: 15px 0;
+    color: red;
+}
+
+footer h3 {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+footer .left-list ul {
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+footer .right-list ul {
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+footer .left_right-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer hr {
+    border: 1px solid rgba(128, 128, 128, 0.358);
+}
+
+
+
+
+
+
+
+
+/* media queary */
+@media screen and (max-width: 600px) {
+    header nav {
+        justify-content: center;
+    }
+
+    main .center-items h1 {
+        font-size: 50px;
+    }
+
+    header nav ul .button a {
+        padding: 7px 10px;
+    }
+
+    main .center-items .input-area {
+        width: 100%;
+    }
+
+    main .center-items .buttons a {
+        padding: 7px;
+        font-size: 12px;
+    }
+
+    footer h3 {
+        font-size: 12px;
+    }
+
+    footer .left_right-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .left-list ul {
+        font-size: 10px;
+    }
+
+    footer .right-list ul {
+        font-size: 10px;
+    }
+}
