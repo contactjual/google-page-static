@@ -5,12 +5,12 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    color: white;
     box-sizing: border-box;
 }
 
 body {
     background-color: rgb(52, 52, 52);
+    min-height: 100vh;
 }
 
 .container {
@@ -19,6 +19,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
+a,
+p,
+input,
+h1,
+h2,
+h3 {
+    color: white;
+}
 
 
 
@@ -67,6 +75,8 @@ header nav ul .button a {
 
 
 
+
+
 main .center-items {
     text-align: center;
 }
@@ -99,14 +109,16 @@ main .center-items input:focus {
 
 main .center-items .input-area {
     position: relative;
-    width: 600px; 
+    width: 600px;
     margin: 0 auto;
 }
 
 main .center-items .icons .fa-magnifying-glass {
     position: absolute;
-    bottom: 44px;
+    bottom: 46px;
     left: 20px;
+    font-size: 14px;
+    color: rgb(175, 175, 175);
 }
 
 main .center-items .icons .mic-cam {
@@ -115,8 +127,11 @@ main .center-items .icons .mic-cam {
     right: 20px;
 }
 
+main .center-items .icons .mic-cam a:first-child {
+    margin-right: 20px;
+}
+
 main .center-items .icons .mic-cam i {
-    margin-right: 15px;
     font-size: 18px;
 }
 
@@ -156,9 +171,11 @@ main .lang a:hover {
 
 
 footer {
-    position: absolute;
+    /* position: absolute;
+    bottom: 0; */
     width: 100%;
-    bottom: 0;
+    position: sticky;
+    top: 100%;
 }
 
 footer a:hover {
@@ -167,7 +184,7 @@ footer a:hover {
 
 footer .bgc {
     background-color: rgba(37, 37, 37, 0.78);
-    padding: 10px 0 8px 0;
+    padding: 15px 0;
 }
 
 footer hr {
