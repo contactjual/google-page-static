@@ -1,0 +1,3 @@
+live view (static)..............................
+
+https://contactjual.github.io/google-page-static/
